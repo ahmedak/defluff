@@ -8,6 +8,11 @@ every run is the point.
 Format loosely follows [Keep a Changelog](https://keepachangelog.com/).
 This project adheres to [Semantic Versioning](https://semver.org/).
 
+## [0.1.1] — 2026-06-20
+
+No package or lexicon changes — re-released to fix CI so the package could
+actually publish (`v0.1.0`'s tag push never triggered a release).
+
 ## [0.1.0] — 2026-06-20
 
 First public release.
@@ -35,4 +40,5 @@ First public release.
 - Compound forms (`it's not X, it's Y`, `not just X but Y`) are on by default (high precision); the punchy `X, not Y` fragment is opt-in via `--pack rhetoric` (~50% precision).
 - Reported under the `rhetoric` category; each construction counts once toward the score (fixed weight). Enabling the fragment tier changes the pinnable lexicon hash.
 
+[0.1.1]: https://github.com/ahmedak/defluff/releases/tag/v0.1.1
 [0.1.0]: https://github.com/ahmedak/defluff/releases/tag/v0.1.0

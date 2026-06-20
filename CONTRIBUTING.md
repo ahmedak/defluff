@@ -60,3 +60,15 @@ pytest tests/test_lexicon.py # unit tests for the lexicon engine
 - One concern per PR
 - If you're adding a lexicon entry, the PR description should include examples of the phrase used as genuine filler
 - If you're changing scoring logic, update `eval/rubric.md` if precision/recall implications change
+
+## Changelog
+
+`CHANGELOG.md` tracks **user-facing** changes only: new/changed lexicon entries,
+new packs, new CLI flags or API behavior, bug fixes that change output, and
+breaking changes. It does **not** track CI config, docs typos, refactors, or
+other internal changes — see [Keep a Changelog](https://keepachangelog.com/).
+
+If your PR touches `src/defluff/data/lexicon-v1.json` or
+`src/defluff/data/patterns-v1.json`, CI will fail unless `CHANGELOG.md` is
+also updated in the same PR (see `.github/workflows/ci.yml`). Other changes
+are on the honor system — use your judgment on whether a user would care.
