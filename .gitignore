@@ -1,0 +1,51 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+*.egg
+.eggs/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Distribution / packaging
+*.whl
+*.tar.gz
+MANIFEST
+
+# Editors
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# defluff overlays (user/project curation — project scope is opt-in to commit)
+.defluff/*.lock
+.defluff/*.tmp
+
+# Eval data (labeled sets are hand-built)
+eval/calibration.jsonl
+
+# Heavy model files
+*.gguf
+*.bin
+*.safetensors
+
+# vhs
+*.tape
+
+# MCP
+.mcp.json

@@ -1,0 +1,44 @@
+# defluff domain pack — Wellness / self-help / influencer
+# 31 phrases. Usage:  defluff lint FILE --lexicon packs/wellness-selfhelp.txt
+# Phrases sourced from public buzzword lists (see the PR that added this file).
+# Layers on top of the built-in lexicon; entries report under the 'custom' category.
+
+do the work
+hold space
+trust the process
+living my best life
+show up for yourself
+highest self
+best self
+manifest abundance
+abundance mindset
+level up
+good vibes only
+self-love journey
+healing journey
+wellness journey
+follow your dreams
+get out of your comfort zone
+just be yourself
+everything happens for a reason
+law of attraction
+raise your vibration
+high vibe
+clean eating
+nourish your body
+fill your cup
+honor your boundaries
+release what no longer serves you
+let go of what no longer serves you
+live in alignment
+protect your energy
+glow up
+main character energy
+
+# --- High false-positive risk: often legitimate words in this domain. ---
+# --- Remove the leading '# ' on any line below to enable it. ---
+# manifest
+# self-care
+# holistic
+# intentional
+# detox

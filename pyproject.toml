@@ -1,0 +1,82 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "defluff"
+version = "0.1.0"
+description = "Deterministic prose linter for LLM-generated text — flags filler phrases, AI buzzwords, hedges, and clichés. No model required. Python API + CI exit codes + RL reward signal."
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.10"
+keywords = [
+    "ai", "nlp", "text", "linting", "slop", "filler", "detection", "llm", "writing",
+    "prose-linter", "filler-word", "cliche", "hedge", "buzzword", "ai-vocab",
+    "reward-signal", "rlhf", "rlaif", "fine-tuning", "reward-shaping",
+    "ai-generated-text", "text-quality", "writing-quality", "content-quality",
+    "ci-gate", "pre-commit", "changelog", "documentation-quality",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Text Processing :: Linguistic",
+    "Topic :: Software Development :: Quality Assurance",
+    "Typing :: Typed",
+]
+dependencies = [
+    "typer>=0.12",
+    "pyahocorasick>=2.0",
+    "filelock>=3.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/ahmedak/defluff"
+Repository = "https://github.com/ahmedak/defluff"
+"Bug Tracker" = "https://github.com/ahmedak/defluff/issues"
+Changelog = "https://github.com/ahmedak/defluff/releases"
+
+[project.optional-dependencies]
+# MCP server: exposes slop_detect/slop_add/slop_ignore to any MCP-aware agent.
+mcp = ["mcp[cli]>=1.0"]
+# Shelved: surprisal scorers kept for the future --deep redesign.
+# deep = ["torch>=2.0", "transformers>=4.40"]
+
+[project.scripts]
+defluff = "defluff.cli:app"
+defluff-mcp = "defluff.mcp:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+defluff = ["data/*.json", "data/packs/*.txt"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+# E/F: pyflakes + pycodestyle, I: import sort, UP: pyupgrade, B: bugbear.
+select = ["E", "F", "I", "UP", "B"]
+# E501 (line length) left to the formatter to avoid churn on long lexicon
+# strings and docstrings.
+ignore = ["E501"]
+
+[tool.ruff.lint.flake8-bugbear]
+# Typer declares CLI options via calls in argument defaults — this is the
+# documented idiom, not the mutable-default bug B008 guards against.
+extend-immutable-calls = ["typer.Argument", "typer.Option"]
+
+[tool.ruff.lint.per-file-ignores]
+# Tests rebind module privates and import inside functions (to control
+# monkeypatch ordering) by design.
+"tests/*" = ["E402", "F401", "I001"]

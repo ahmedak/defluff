@@ -1,0 +1,1090 @@
+{
+  "version": "v1",
+  "default_threshold": 0.08,
+  "threshold_provisional": true,
+  "category_weights": {
+    "cliche": 1.0,
+    "hedge": 0.8,
+    "ai-vocab": 1.2,
+    "corporate": 0.9,
+    "transition": 0.6,
+    "custom": 1.0
+  },
+  "entries": [
+    {
+      "pattern": "at the end of the day",
+      "category": "cliche",
+      "source": "curated",
+      "added": "2026-06-08"
+    },
+    {
+      "pattern": "it is important to note",
+      "category": "cliche",
+      "source": "curated",
+      "added": "2026-06-08"
+    },
+    {
+      "pattern": "it's important to note",
+      "category": "cliche",
+      "source": "curated",
+      "added": "2026-06-08"
+    },
+    {
+      "pattern": "in today's fast-paced world",
+      "category": "cliche",
+      "source": "curated",
+      "added": "2026-06-08"
+    },
+    {
+      "pattern": "in today's rapidly evolving",
+      "category": "cliche",
+      "source": "curated",
+      "added": "2026-06-08"
+    },
+    {
+      "pattern": "move the needle",
+      "category": "cliche",
+      "source": "curated",
+      "added": "2026-06-08"
+    },
+    {
+      "pattern": "game changer",
+      "category": "cliche",
+      "source": "curated",
+      "added": "2026-06-08"
+    },
+    {
+      "pattern": "game-changer",
+      "category": "cliche",
+      "source": "curated",
+      "added": "2026-06-08"
+    },
+    {
+      "pattern": "think outside the box",
+      "category": "cliche",
+      "source": "curated",
+      "added": "2026-06-08"
+    },
+    {
+      "pattern": "low-hanging fruit",
+      "category": "cliche",
+      "source": "curated",
+      "added": "2026-06-08"
+    },
+    {
+      "pattern": "low hanging fruit",
+      "category": "cliche",
+      "source": "curated",
+      "added": "2026-06-08"
+    },
+    {
+      "pattern": "paradigm shift",
+      "category": "cliche",
+      "source": "curated",
+      "added": "2026-06-08"
+    },
+    {
+      "pattern": "win-win",
+      "category": "cliche",
+      "source": "curated",
+      "added": "2026-06-08"
+    },
+    {
+      "pattern": "circle back",
+      "category": "cliche",
+      "source": "curated",
+      "added": "2026-06-08"
+    },
+    {
+      "pattern": "touch base",
+      "category": "cliche",
+      "source": "curated",
+      "added": "2026-06-08"
+    },
+    {
+      "pattern": "to be perfectly honest",
+      "category": "cliche",
+      "source": "curated",
+      "added": "2026-06-08"
+    },
+    {
+      "pattern": "to be honest with you",
+      "category": "cliche",
+      "source": "curated",
+      "added": "2026-06-08"
+    },
+    {
+      "pattern": "at this point in time",
+      "category": "cliche",
+      "source": "curated",
+      "added": "2026-06-08"
+    },
+    {
+      "pattern": "going forward",
+      "category": "cliche",
+      "source": "curated",
+      "added": "2026-06-08"
+    },
+    {
+      "pattern": "core competencies",
+      "category": "cliche",
+      "source": "curated",
+      "added": "2026-06-08"
+    },
+    {
+      "pattern": "value proposition",
+      "category": "cliche",
+      "source": "curated",
+      "added": "2026-06-08"
+    },
+    {
+      "pattern": "we're thrilled to",
+      "category": "cliche",
+      "source": "curated",
+      "added": "2026-06-08"
+    },
+    {
+      "pattern": "we are thrilled to",
+      "category": "cliche",
+      "source": "curated",
+      "added": "2026-06-08"
+    },
+    {
+      "pattern": "excited to announce",
+      "category": "cliche",
+      "source": "curated",
+      "added": "2026-06-08"
+    },
+    {
+      "pattern": "it seems that it may",
+      "category": "hedge",
+      "source": "curated",
+      "added": "2026-06-08"
+    },
+    {
+      "pattern": "it seems that",
+      "category": "hedge",
+      "source": "curated",
+      "added": "2026-06-08"
+    },
+    {
+      "pattern": "it may potentially",
+      "category": "hedge",
+      "source": "curated",
+      "added": "2026-06-08"
+    },
+    {
+      "pattern": "it is worth noting that",
+      "category": "ai-vocab",
+      "source": "curated",
+      "added": "2026-06-08"
+    },
+    {
+      "pattern": "it should be noted that",
+      "category": "hedge",
+      "source": "curated",
+      "added": "2026-06-08"
+    },
+    {
+      "pattern": "needless to say",
+      "category": "hedge",
+      "source": "curated",
+      "added": "2026-06-08"
+    },
+    {
+      "pattern": "as we all know",
+      "category": "hedge",
+      "source": "curated",
+      "added": "2026-06-08"
+    },
+    {
+      "pattern": "of course",
+      "category": "hedge",
+      "source": "curated",
+      "added": "2026-06-08",
+      "weight": 0.5
+    },
+    {
+      "pattern": "clearly",
+      "category": "hedge",
+      "source": "curated",
+      "added": "2026-06-08",
+      "weight": 0.3
+    },
+    {
+      "pattern": "obviously",
+      "category": "hedge",
+      "source": "curated",
+      "added": "2026-06-08",
+      "weight": 0.5
+    },
+    {
+      "pattern": "basically",
+      "category": "hedge",
+      "source": "curated",
+      "added": "2026-06-08",
+      "weight": 0.6
+    },
+    {
+      "pattern": "actually",
+      "category": "hedge",
+      "source": "curated",
+      "added": "2026-06-08",
+      "weight": 0.3
+    },
+    {
+      "pattern": "essentially",
+      "category": "hedge",
+      "source": "curated",
+      "added": "2026-06-08",
+      "weight": 0.6
+    },
+    {
+      "pattern": "generally speaking",
+      "category": "hedge",
+      "source": "curated",
+      "added": "2026-06-08"
+    },
+    {
+      "pattern": "in many ways",
+      "category": "hedge",
+      "source": "curated",
+      "added": "2026-06-08"
+    },
+    {
+      "pattern": "there are a number of",
+      "category": "hedge",
+      "source": "curated",
+      "added": "2026-06-08"
+    },
+    {
+      "pattern": "a number of various",
+      "category": "hedge",
+      "source": "curated",
+      "added": "2026-06-08"
+    },
+    {
+      "pattern": "various different",
+      "category": "hedge",
+      "source": "curated",
+      "added": "2026-06-08"
+    },
+    {
+      "pattern": "in order to",
+      "category": "hedge",
+      "source": "curated",
+      "added": "2026-06-08",
+      "weight": 0.4
+    },
+    {
+      "pattern": "really need to",
+      "category": "hedge",
+      "source": "curated",
+      "added": "2026-06-08",
+      "weight": 0.6
+    },
+    {
+      "pattern": "delve",
+      "category": "ai-vocab",
+      "source": "curated",
+      "added": "2026-06-08"
+    },
+    {
+      "pattern": "delving",
+      "category": "ai-vocab",
+      "source": "curated",
+      "added": "2026-06-08"
+    },
+    {
+      "pattern": "delved",
+      "category": "ai-vocab",
+      "source": "curated",
+      "added": "2026-06-08"
+    },
+    {
+      "pattern": "crucial",
+      "category": "ai-vocab",
+      "source": "curated",
+      "added": "2026-06-08",
+      "weight": 0.9
+    },
+    {
+      "pattern": "robust",
+      "category": "ai-vocab",
+      "source": "curated",
+      "added": "2026-06-08",
+      "weight": 0.6
+    },
+    {
+      "pattern": "comprehensive",
+      "category": "ai-vocab",
+      "source": "curated",
+      "added": "2026-06-08",
+      "weight": 0.9
+    },
+    {
+      "pattern": "nuanced",
+      "category": "ai-vocab",
+      "source": "curated",
+      "added": "2026-06-08",
+      "weight": 0.6
+    },
+    {
+      "pattern": "multifaceted",
+      "category": "ai-vocab",
+      "source": "curated",
+      "added": "2026-06-08"
+    },
+    {
+      "pattern": "pivotal",
+      "category": "ai-vocab",
+      "source": "curated",
+      "added": "2026-06-08"
+    },
+    {
+      "pattern": "tapestry",
+      "category": "ai-vocab",
+      "source": "curated",
+      "added": "2026-06-08"
+    },
+    {
+      "pattern": "underscore",
+      "category": "ai-vocab",
+      "source": "curated",
+      "added": "2026-06-08",
+      "weight": 0.9
+    },
+    {
+      "pattern": "foster",
+      "category": "ai-vocab",
+      "source": "curated",
+      "added": "2026-06-08",
+      "weight": 0.6
+    },
+    {
+      "pattern": "fostering",
+      "category": "ai-vocab",
+      "source": "curated",
+      "added": "2026-06-08",
+      "weight": 0.6
+    },
+    {
+      "pattern": "showcase",
+      "category": "ai-vocab",
+      "source": "curated",
+      "added": "2026-06-08"
+    },
+    {
+      "pattern": "showcasing",
+      "category": "ai-vocab",
+      "source": "curated",
+      "added": "2026-06-08"
+    },
+    {
+      "pattern": "intricate",
+      "category": "ai-vocab",
+      "source": "curated",
+      "added": "2026-06-08"
+    },
+    {
+      "pattern": "vibrant",
+      "category": "ai-vocab",
+      "source": "curated",
+      "added": "2026-06-08",
+      "weight": 0.6
+    },
+    {
+      "pattern": "landscape",
+      "category": "ai-vocab",
+      "source": "curated",
+      "added": "2026-06-08"
+    },
+    {
+      "pattern": "it's worth noting",
+      "category": "ai-vocab",
+      "source": "curated",
+      "added": "2026-06-08"
+    },
+    {
+      "pattern": "it is worth noting",
+      "category": "ai-vocab",
+      "source": "curated",
+      "added": "2026-06-08"
+    },
+    {
+      "pattern": "synergy",
+      "category": "corporate",
+      "source": "curated",
+      "added": "2026-06-08"
+    },
+    {
+      "pattern": "leverage",
+      "category": "corporate",
+      "source": "curated",
+      "added": "2026-06-08"
+    },
+    {
+      "pattern": "leveraging",
+      "category": "corporate",
+      "source": "curated",
+      "added": "2026-06-08"
+    },
+    {
+      "pattern": "utilize",
+      "category": "corporate",
+      "source": "curated",
+      "added": "2026-06-08",
+      "weight": 0.7
+    },
+    {
+      "pattern": "utilizing",
+      "category": "corporate",
+      "source": "curated",
+      "added": "2026-06-08",
+      "weight": 0.7
+    },
+    {
+      "pattern": "actionable insights",
+      "category": "corporate",
+      "source": "curated",
+      "added": "2026-06-08"
+    },
+    {
+      "pattern": "cutting-edge",
+      "category": "corporate",
+      "source": "curated",
+      "added": "2026-06-08"
+    },
+    {
+      "pattern": "cutting edge",
+      "category": "corporate",
+      "source": "curated",
+      "added": "2026-06-08"
+    },
+    {
+      "pattern": "best-in-class",
+      "category": "corporate",
+      "source": "curated",
+      "added": "2026-06-08"
+    },
+    {
+      "pattern": "world-class",
+      "category": "corporate",
+      "source": "curated",
+      "added": "2026-06-08"
+    },
+    {
+      "pattern": "stakeholders",
+      "category": "corporate",
+      "source": "curated",
+      "added": "2026-06-08"
+    },
+    {
+      "pattern": "bandwidth",
+      "category": "corporate",
+      "source": "curated",
+      "added": "2026-06-08"
+    },
+    {
+      "pattern": "furthermore",
+      "category": "transition",
+      "source": "curated",
+      "added": "2026-06-08"
+    },
+    {
+      "pattern": "moreover",
+      "category": "transition",
+      "source": "curated",
+      "added": "2026-06-08"
+    },
+    {
+      "pattern": "additionally",
+      "category": "transition",
+      "source": "curated",
+      "added": "2026-06-08",
+      "weight": 0.4
+    },
+    {
+      "pattern": "in conclusion",
+      "category": "transition",
+      "source": "curated",
+      "added": "2026-06-08"
+    },
+    {
+      "pattern": "in summary",
+      "category": "transition",
+      "source": "curated",
+      "added": "2026-06-08"
+    },
+    {
+      "pattern": "to summarize",
+      "category": "transition",
+      "source": "curated",
+      "added": "2026-06-08"
+    },
+    {
+      "pattern": "as mentioned above",
+      "category": "transition",
+      "source": "curated",
+      "added": "2026-06-08"
+    },
+    {
+      "pattern": "as mentioned earlier",
+      "category": "transition",
+      "source": "curated",
+      "added": "2026-06-08"
+    },
+    {
+      "pattern": "last but not least",
+      "category": "transition",
+      "source": "curated",
+      "added": "2026-06-08"
+    },
+    {
+      "pattern": "first and foremost",
+      "category": "transition",
+      "source": "curated",
+      "added": "2026-06-08"
+    },
+    {
+      "pattern": "in terms of",
+      "category": "transition",
+      "source": "curated",
+      "added": "2026-06-08",
+      "weight": 0.2
+    },
+    {
+      "pattern": "with regard to",
+      "category": "transition",
+      "source": "curated",
+      "added": "2026-06-08"
+    },
+    {
+      "pattern": "with regards to",
+      "category": "transition",
+      "source": "curated",
+      "added": "2026-06-08"
+    },
+    {
+      "pattern": "it's important to note",
+      "category": "ai-vocab",
+      "source": "curated",
+      "added": "2026-06-13"
+    },
+    {
+      "pattern": "it is important to note that",
+      "category": "ai-vocab",
+      "source": "curated",
+      "added": "2026-06-13"
+    },
+    {
+      "pattern": "it's worth emphasizing",
+      "category": "ai-vocab",
+      "source": "curated",
+      "added": "2026-06-13"
+    },
+    {
+      "pattern": "this allows us to",
+      "category": "ai-vocab",
+      "source": "curated",
+      "added": "2026-06-13"
+    },
+    {
+      "pattern": "and more",
+      "category": "hedge",
+      "source": "curated",
+      "added": "2026-06-13",
+      "weight": 0.4
+    },
+    {
+      "pattern": "there are valid points on both sides",
+      "category": "hedge",
+      "source": "curated",
+      "added": "2026-06-13"
+    },
+    {
+      "pattern": "it depends on the context",
+      "category": "hedge",
+      "source": "curated",
+      "added": "2026-06-13"
+    },
+    {
+      "pattern": "great question",
+      "category": "ai-vocab",
+      "source": "curated",
+      "added": "2026-06-13"
+    },
+    {
+      "pattern": "absolutely",
+      "category": "ai-vocab",
+      "source": "curated",
+      "added": "2026-06-13",
+      "weight": 0.5
+    },
+    {
+      "pattern": "certainly",
+      "category": "ai-vocab",
+      "source": "curated",
+      "added": "2026-06-13",
+      "weight": 0.5
+    },
+    {
+      "pattern": "tends to",
+      "category": "hedge",
+      "source": "curated",
+      "added": "2026-06-13",
+      "weight": 0.4
+    },
+    {
+      "pattern": "can often",
+      "category": "hedge",
+      "source": "curated",
+      "added": "2026-06-13",
+      "weight": 0.4
+    },
+    {
+      "pattern": "as mentioned",
+      "category": "transition",
+      "source": "curated",
+      "added": "2026-06-13"
+    },
+    {
+      "pattern": "a beacon of",
+      "category": "ai-vocab",
+      "source": "crawl",
+      "added": "2026-06-15"
+    },
+    {
+      "pattern": "aims to explore",
+      "category": "ai-vocab",
+      "source": "crawl",
+      "added": "2026-06-15"
+    },
+    {
+      "pattern": "as a matter of fact",
+      "category": "transition",
+      "source": "crawl",
+      "added": "2026-06-15"
+    },
+    {
+      "pattern": "as we have seen",
+      "category": "transition",
+      "source": "crawl",
+      "added": "2026-06-15"
+    },
+    {
+      "pattern": "delve deeper",
+      "category": "ai-vocab",
+      "source": "crawl",
+      "added": "2026-06-15"
+    },
+    {
+      "pattern": "diverse array",
+      "category": "ai-vocab",
+      "source": "crawl",
+      "added": "2026-06-15"
+    },
+    {
+      "pattern": "drinking the kool-aid",
+      "category": "cliche",
+      "source": "crawl",
+      "added": "2026-06-15"
+    },
+    {
+      "pattern": "due to the fact that",
+      "category": "transition",
+      "source": "crawl",
+      "added": "2026-06-15"
+    },
+    {
+      "pattern": "ever-changing",
+      "category": "cliche",
+      "source": "crawl",
+      "added": "2026-06-15"
+    },
+    {
+      "pattern": "ever-evolving",
+      "category": "cliche",
+      "source": "crawl",
+      "added": "2026-06-15"
+    },
+    {
+      "pattern": "for the most part",
+      "category": "hedge",
+      "source": "crawl",
+      "added": "2026-06-15"
+    },
+    {
+      "pattern": "game-changing",
+      "category": "cliche",
+      "source": "crawl",
+      "added": "2026-06-15"
+    },
+    {
+      "pattern": "in a very real sense",
+      "category": "cliche",
+      "source": "crawl",
+      "added": "2026-06-15"
+    },
+    {
+      "pattern": "in the realm of",
+      "category": "ai-vocab",
+      "source": "crawl",
+      "added": "2026-06-15"
+    },
+    {
+      "pattern": "in today's world",
+      "category": "cliche",
+      "source": "crawl",
+      "added": "2026-06-15"
+    },
+    {
+      "pattern": "it is worth mentioning that",
+      "category": "transition",
+      "source": "crawl",
+      "added": "2026-06-15"
+    },
+    {
+      "pattern": "leading edge",
+      "category": "corporate",
+      "source": "crawl",
+      "added": "2026-06-15"
+    },
+    {
+      "pattern": "let's dive in",
+      "category": "cliche",
+      "source": "crawl",
+      "added": "2026-06-15"
+    },
+    {
+      "pattern": "leverage the power of",
+      "category": "corporate",
+      "source": "crawl",
+      "added": "2026-06-15"
+    },
+    {
+      "pattern": "moving the needle",
+      "category": "cliche",
+      "source": "crawl",
+      "added": "2026-06-15"
+    },
+    {
+      "pattern": "navigating the complexities",
+      "category": "cliche",
+      "source": "crawl",
+      "added": "2026-06-15"
+    },
+    {
+      "pattern": "nestled in the heart of",
+      "category": "cliche",
+      "source": "crawl",
+      "added": "2026-06-15"
+    },
+    {
+      "pattern": "no-brainer",
+      "category": "cliche",
+      "source": "crawl",
+      "added": "2026-06-15"
+    },
+    {
+      "pattern": "one-stop shop",
+      "category": "cliche",
+      "source": "crawl",
+      "added": "2026-06-15"
+    },
+    {
+      "pattern": "play a significant role in shaping",
+      "category": "cliche",
+      "source": "crawl",
+      "added": "2026-06-15"
+    },
+    {
+      "pattern": "since the dawn of time",
+      "category": "cliche",
+      "source": "crawl",
+      "added": "2026-06-15"
+    },
+    {
+      "pattern": "stands as a testament",
+      "category": "ai-vocab",
+      "source": "crawl",
+      "added": "2026-06-15"
+    },
+    {
+      "pattern": "unleash",
+      "category": "ai-vocab",
+      "source": "crawl",
+      "added": "2026-06-15"
+    },
+    {
+      "pattern": "cannot be overstated",
+      "category": "ai-vocab",
+      "source": "curated",
+      "added": "2026-06-15"
+    },
+    {
+      "pattern": "plays a crucial role",
+      "category": "ai-vocab",
+      "source": "curated",
+      "added": "2026-06-15"
+    },
+    {
+      "pattern": "plays a vital role",
+      "category": "ai-vocab",
+      "source": "curated",
+      "added": "2026-06-15"
+    },
+    {
+      "pattern": "plays a pivotal role",
+      "category": "ai-vocab",
+      "source": "curated",
+      "added": "2026-06-15"
+    },
+    {
+      "pattern": "shed light on",
+      "category": "ai-vocab",
+      "source": "curated",
+      "added": "2026-06-15"
+    },
+    {
+      "pattern": "paves the way",
+      "category": "cliche",
+      "source": "curated",
+      "added": "2026-06-15"
+    },
+    {
+      "pattern": "pave the way",
+      "category": "cliche",
+      "source": "curated",
+      "added": "2026-06-15"
+    },
+    {
+      "pattern": "a testament to",
+      "category": "ai-vocab",
+      "source": "curated",
+      "added": "2026-06-15"
+    },
+    {
+      "pattern": "it goes without saying",
+      "category": "hedge",
+      "source": "curated",
+      "added": "2026-06-15"
+    },
+    {
+      "pattern": "rest assured",
+      "category": "cliche",
+      "source": "curated",
+      "added": "2026-06-15"
+    },
+    {
+      "pattern": "look no further",
+      "category": "cliche",
+      "source": "curated",
+      "added": "2026-06-15"
+    },
+    {
+      "pattern": "embark on a journey",
+      "category": "cliche",
+      "source": "curated",
+      "added": "2026-06-15"
+    },
+    {
+      "pattern": "embark on",
+      "category": "ai-vocab",
+      "source": "curated",
+      "added": "2026-06-15"
+    },
+    {
+      "pattern": "when it comes to",
+      "category": "transition",
+      "source": "curated",
+      "added": "2026-06-15"
+    },
+    {
+      "pattern": "unlock the power of",
+      "category": "corporate",
+      "source": "curated",
+      "added": "2026-06-15"
+    },
+    {
+      "pattern": "unlock the potential",
+      "category": "corporate",
+      "source": "curated",
+      "added": "2026-06-15"
+    },
+    {
+      "pattern": "dive into",
+      "category": "cliche",
+      "source": "curated",
+      "added": "2026-06-15"
+    },
+    {
+      "pattern": "deep dive",
+      "category": "cliche",
+      "source": "curated",
+      "added": "2026-06-15"
+    },
+    {
+      "pattern": "treasure trove",
+      "category": "ai-vocab",
+      "source": "curated",
+      "added": "2026-06-15"
+    },
+    {
+      "pattern": "at its core",
+      "category": "ai-vocab",
+      "source": "curated",
+      "added": "2026-06-15"
+    },
+    {
+      "pattern": "the world of",
+      "category": "ai-vocab",
+      "source": "curated",
+      "added": "2026-06-15"
+    },
+    {
+      "pattern": "in the world of",
+      "category": "ai-vocab",
+      "source": "curated",
+      "added": "2026-06-15"
+    },
+    {
+      "pattern": "myriad",
+      "category": "ai-vocab",
+      "source": "curated",
+      "added": "2026-06-15",
+      "weight": 1.0
+    },
+    {
+      "pattern": "plethora",
+      "category": "ai-vocab",
+      "source": "curated",
+      "added": "2026-06-15",
+      "weight": 1.0
+    },
+    {
+      "pattern": "boasts",
+      "category": "ai-vocab",
+      "source": "curated",
+      "added": "2026-06-15",
+      "weight": 0.7
+    },
+    {
+      "pattern": "harness",
+      "category": "ai-vocab",
+      "source": "curated",
+      "added": "2026-06-15",
+      "weight": 0.6
+    },
+    {
+      "pattern": "harnessing",
+      "category": "ai-vocab",
+      "source": "curated",
+      "added": "2026-06-15",
+      "weight": 0.6
+    },
+    {
+      "pattern": "meticulous",
+      "category": "ai-vocab",
+      "source": "curated",
+      "added": "2026-06-15",
+      "weight": 0.8
+    },
+    {
+      "pattern": "meticulously",
+      "category": "ai-vocab",
+      "source": "curated",
+      "added": "2026-06-15",
+      "weight": 0.8
+    },
+    {
+      "pattern": "captivating",
+      "category": "ai-vocab",
+      "source": "curated",
+      "added": "2026-06-15",
+      "weight": 0.7
+    },
+    {
+      "pattern": "resonate",
+      "category": "ai-vocab",
+      "source": "curated",
+      "added": "2026-06-15",
+      "weight": 0.5
+    },
+    {
+      "pattern": "realm",
+      "category": "ai-vocab",
+      "source": "curated",
+      "added": "2026-06-15",
+      "weight": 0.6
+    },
+    {
+      "pattern": "testament",
+      "category": "ai-vocab",
+      "source": "curated",
+      "added": "2026-06-15",
+      "weight": 0.7
+    },
+    {
+      "pattern": "transformative",
+      "category": "ai-vocab",
+      "source": "curated",
+      "added": "2026-06-15",
+      "weight": 0.7
+    },
+    {
+      "pattern": "seamless",
+      "category": "corporate",
+      "source": "curated",
+      "added": "2026-06-15",
+      "weight": 0.8
+    },
+    {
+      "pattern": "seamlessly",
+      "category": "corporate",
+      "source": "curated",
+      "added": "2026-06-15",
+      "weight": 0.8
+    },
+    {
+      "pattern": "load-bearing",
+      "category": "ai-vocab",
+      "source": "curated",
+      "added": "2026-06-15",
+      "weight": 1.5
+    },
+    {
+      "pattern": "seam",
+      "category": "ai-vocab",
+      "source": "curated",
+      "added": "2026-06-17"
+    },
+    {
+      "pattern": "principled",
+      "category": "ai-vocab",
+      "source": "curated",
+      "added": "2026-06-17",
+      "weight": 0.8
+    },
+    {
+      "pattern": "holistic",
+      "category": "ai-vocab",
+      "source": "curated",
+      "added": "2026-06-17",
+      "weight": 0.8
+    },
+    {
+      "pattern": "dive",
+      "category": "ai-vocab",
+      "source": "curated",
+      "added": "2026-06-17",
+      "weight": 0.8
+    },
+    {
+      "pattern": "slop",
+      "category": "ai-vocab",
+      "source": "curated",
+      "added": "2026-06-17"
+    }
+  ]
+}

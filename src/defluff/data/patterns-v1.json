@@ -1,0 +1,45 @@
+{
+  "version": "patterns-v1",
+  "patterns": [
+    {
+      "name": "antithesis-pronoun-not-echo",
+      "regex": "\\b(?:it|this|that|they|we|you)(?:['’]s|['’]re| is| are| am)?\\s+not\\s+(?:just\\s+|only\\s+|merely\\s+|simply\\s+|about\\s+)?[^.?!,;:—–\\-]{2,50}\\s*[,—–\\-]\\s*(?:it|this|that|they|we|you)(?:['’]s|['’]re| is| are)\\b",
+      "category": "rhetoric",
+      "weight": 1.0,
+      "optin": false,
+      "note": "'it's not X, it's Y' / 'this is not about X - it's Y'"
+    },
+    {
+      "name": "antithesis-isnt-echo",
+      "regex": "\\b\\w+\\s+(?:is|are|was|were)n['’]?t\\s+[^.?!,;:—–\\-]{2,50}\\s*[,—–\\-]\\s*(?:it|they|that|this|we|you)(?:['’]s|['’]re| is| are)\\b",
+      "category": "rhetoric",
+      "weight": 1.0,
+      "optin": false,
+      "note": "'your list isn't a competitor - it's the input'"
+    },
+    {
+      "name": "antithesis-not-just-but",
+      "regex": "\\bnot\\s+(?:just|only|merely|simply)\\s+[^.?!]{2,60}\\bbut(?:\\s+also)?\\b",
+      "category": "rhetoric",
+      "weight": 1.0,
+      "optin": false,
+      "note": "'not just X but (also) Y'"
+    },
+    {
+      "name": "antithesis-not-but-rather",
+      "regex": "\\bnot\\s+[^.?!,;:]{2,45}\\bbut\\s+(?:rather|instead)\\b",
+      "category": "rhetoric",
+      "weight": 1.0,
+      "optin": false,
+      "note": "'not X but rather/instead Y'"
+    },
+    {
+      "name": "antithesis-fragment",
+      "regex": "\\b\\w+,\\s+not\\s+(?!yet\\b|all\\b|just\\b|only\\b|necessarily\\b|even\\b|quite\\b|very\\b|so\\b|too\\b|that\\b|this\\b|merely\\b|simply\\b|about\\b|always\\b|enough\\b|a few\\b)(?:a\\s+|an\\s+|the\\s+)?\\w+",
+      "category": "rhetoric",
+      "weight": 1.0,
+      "optin": true,
+      "note": "'X, not Y' punchy fragment - ~45% precision, opt-in only"
+    }
+  ]
+}

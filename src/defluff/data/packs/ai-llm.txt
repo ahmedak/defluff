@@ -1,0 +1,36 @@
+# defluff domain pack — AI / LLM telltale vocabulary
+# 31 phrases. Usage:  defluff lint FILE --lexicon packs/ai-llm.txt
+# Phrases sourced from public buzzword lists (see the PR that added this file).
+# Layers on top of the built-in lexicon; entries report under the 'custom' category.
+
+testament to
+stands as a testament
+realm
+in the realm of
+navigating the complexities
+a beacon of
+plays a crucial role
+plays a vital role
+play a significant role in shaping
+ever-evolving
+ever-changing
+leverage the power of
+delve deeper
+harness
+facilitate
+bolster
+streamline
+empower
+unleash
+unlock
+elevate
+seamless
+transformative
+groundbreaking
+myriad
+plethora
+diverse array
+nestled in the heart of
+let's dive in
+aims to explore
+when it comes to

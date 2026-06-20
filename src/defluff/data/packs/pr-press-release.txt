@@ -1,0 +1,32 @@
+# defluff domain pack — PR / press-release boilerplate
+# 27 phrases. Usage:  defluff lint FILE --lexicon packs/pr-press-release.txt
+# Phrases sourced from public buzzword lists (see the PR that added this file).
+# Layers on top of the built-in lexicon; entries report under the 'custom' category.
+
+thrilled to announce
+pleased to announce
+proud to announce
+delighted to announce
+honored to announce
+excited to share
+thrilled to share
+we are pleased to
+industry-leading
+market-leading
+leading provider
+leading provider of innovative solutions
+a leader in
+best-of-breed
+state-of-the-art
+mission-critical
+customer-centric
+committed to excellence
+committed to delivering
+delivering value
+redefining the way
+next-generation
+game-changing
+award-winning
+innovative solutions
+one-stop shop
+moving the needle

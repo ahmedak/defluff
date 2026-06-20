@@ -1,0 +1,39 @@
+# defluff domain pack — Startup / VC / pitch-deck
+# 24 phrases. Usage:  defluff lint FILE --lexicon packs/startup-vc.txt
+# Phrases sourced from public buzzword lists (see the PR that added this file).
+# Layers on top of the built-in lexicon; entries report under the 'custom' category.
+
+disruptive
+revolutionary
+leading edge
+secret sauce
+moat
+hockey stick
+10x
+first-mover advantage
+north star
+hair on fire
+blitzscale
+unicorn
+no-brainer
+growth hacking
+stealth mode
+eat your own dog food
+drinking the kool-aid
+spray and pray
+dry powder
+elevator pitch
+the amazon of
+vaporware
+sweat equity
+move fast and break things
+
+# --- High false-positive risk: often legitimate words in this domain. ---
+# --- Remove the leading '# ' on any line below to enable it. ---
+# tam
+# product-market fit
+# pivot
+# runway
+# burn rate
+# traction
+# deal flow

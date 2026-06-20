@@ -1,0 +1,39 @@
+# defluff domain pack — Academic / research filler & hedging
+# 30 phrases. Usage:  defluff lint FILE --lexicon packs/academic.txt
+# Phrases sourced from public buzzword lists (see the PR that added this file).
+# Layers on top of the built-in lexicon; entries report under the 'custom' category.
+
+it is well known that
+it is widely accepted that
+it is generally accepted that
+it is known that
+to the best of our knowledge
+it has been noted that
+plays an important role
+plays a key role
+a growing body of literature
+a growing body of evidence
+more research is needed
+further research is needed
+few studies have
+shed light on
+in recent years
+in today's world
+since the dawn of time
+it is believed that
+it has long been thought that
+as we have seen
+for the most part
+in a very real sense
+due to the fact that
+as a matter of fact
+to some extent
+under certain circumstances
+it is worth mentioning that
+according to most measures
+has attracted considerable attention
+proves to be
+
+# --- High false-positive risk: often legitimate words in this domain. ---
+# --- Remove the leading '# ' on any line below to enable it. ---
+# we found that

@@ -1,0 +1,36 @@
+# defluff domain pack — Marketing / growth / SEO
+# 31 phrases. Usage:  defluff lint FILE --lexicon packs/marketing-growth.txt
+# Phrases sourced from public buzzword lists (see the PR that added this file).
+# Layers on top of the built-in lexicon; entries report under the 'custom' category.
+
+industry-leading
+state-of-the-art
+game-changing
+seamless
+frictionless
+turnkey
+revolutionary
+disruptive
+innovative
+next-generation
+next-level
+scalable
+results-driven
+customer-centric
+best-of-breed
+all-in-one solution
+one-stop shop
+end-to-end
+growth hacking
+take it to the next level
+hit the ground running
+for all your needs
+we have you covered
+the ultimate guide
+trusted by thousands
+proven results
+supercharge
+unlock
+elevate
+immersive
+holistic

@@ -1,0 +1,40 @@
+# defluff domain pack — Corporate / LinkedIn-speak
+# 31 phrases. Usage:  defluff lint FILE --lexicon packs/corporate-linkedin.txt
+# Phrases sourced from public buzzword lists (see the PR that added this file).
+# Layers on top of the built-in lexicon; entries report under the 'custom' category.
+
+deep dive
+take this offline
+boil the ocean
+value-add
+move the goal posts
+run it up the flagpole
+put a pin in it
+reinvent the wheel
+drink the kool-aid
+ducks in a row
+herding cats
+in the weeds
+per my last email
+trim the fat
+brain dump
+break down silos
+hard stop
+blue-sky thinking
+open the kimono
+peel back the onion
+thought leader
+holistic approach
+boots on the ground
+give 110%
+drill down
+flesh out
+double-click on
+pain point
+buy-in
+throw under the bus
+back burner
+
+# --- High false-positive risk: often legitimate words in this domain. ---
+# --- Remove the leading '# ' on any line below to enable it. ---
+# reach out
