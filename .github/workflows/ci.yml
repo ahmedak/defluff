@@ -63,3 +63,67 @@ jobs:
       - run: pip install build
       - run: python -m build
       - uses: pypa/gh-action-pypi-publish@release/v1
+
+  release-homebrew:
+    if: startsWith(github.ref, 'refs/tags/v')
+    needs: publish
+    runs-on: ubuntu-latest
+    steps:
+      - name: Wait for PyPI to serve the new version
+        run: |
+          VERSION="${GITHUB_REF#refs/tags/v}"
+          for i in $(seq 1 20); do
+            if curl -fs "https://pypi.org/pypi/defluff/$VERSION/json" > /dev/null; then exit 0; fi
+            sleep 15
+          done
+          echo "::error::PyPI never served defluff $VERSION"; exit 1
+
+      - name: Compute new formula values
+        id: vals
+        run: |
+          VERSION="${GITHUB_REF#refs/tags/v}"
+          read -r URL SHA256 <<< "$(python3 -c "
+import json, urllib.request
+d = json.load(urllib.request.urlopen('https://pypi.org/pypi/defluff/$VERSION/json'))
+sdist = next(f for f in d['urls'] if f['packagetype']=='sdist')
+print(sdist['url'], sdist['digests']['sha256'])
+")"
+          echo "version=$VERSION" >> "$GITHUB_OUTPUT"
+          echo "url=$URL" >> "$GITHUB_OUTPUT"
+          echo "sha256=$SHA256" >> "$GITHUB_OUTPUT"
+
+      - name: Bump the tap formula and open a PR
+        env:
+          GH_TOKEN: ${{ secrets.HOMEBREW_TAP_TOKEN }}
+        run: |
+          git clone "https://x-access-token:${GH_TOKEN}@github.com/ahmedak/homebrew-defluff.git"
+          cd homebrew-defluff
+          git config user.name ahmedak
+          git config user.email 9638048+ahmedak@users.noreply.github.com
+          BRANCH="bump-${{ steps.vals.outputs.version }}"
+          git checkout -b "$BRANCH"
+          python3 - "${{ steps.vals.outputs.url }}" "${{ steps.vals.outputs.sha256 }}" <<'PYEOF'
+          import re, sys
+          url, sha256 = sys.argv[1], sys.argv[2]
+          path = "Formula/defluff.rb"
+          text = open(path).read()
+          text = re.sub(r'url "https://files\.pythonhosted\.org/[^"]+defluff-[^"]+\.tar\.gz"', f'url "{url}"', text, count=1)
+          text = re.sub(r'(url "https://files\.pythonhosted\.org/[^"]+defluff[^\n]+\n\s*)sha256 "[a-f0-9]{64}"', rf'\1sha256 "{sha256}"', text, count=1)
+          text = re.sub(r'\n\n  bottle do\n.*?\n  end\n', '\n', text, flags=re.DOTALL)
+          open(path, "w").write(text)
+          PYEOF
+          git add Formula/defluff.rb
+          git commit -m "defluff ${{ steps.vals.outputs.version }}"
+          git push origin "$BRANCH"
+          gh pr create --title "defluff ${{ steps.vals.outputs.version }}" \
+            --body "Auto-bump from defluff release v${{ steps.vals.outputs.version }}." \
+            --head "$BRANCH" --base main
+          echo "PR_NUM=$(gh pr view "$BRANCH" --json number -q .number)" >> "$GITHUB_ENV"
+
+      - name: Wait for bottle build, then merge
+        env:
+          GH_TOKEN: ${{ secrets.HOMEBREW_TAP_TOKEN }}
+        run: |
+          cd homebrew-defluff
+          gh pr checks "$PR_NUM" --watch --interval 30
+          gh pr edit "$PR_NUM" --add-label pr-pull
