@@ -82,12 +82,7 @@ jobs:
         id: vals
         run: |
           VERSION="${GITHUB_REF#refs/tags/v}"
-          read -r URL SHA256 <<< "$(python3 -c "
-import json, urllib.request
-d = json.load(urllib.request.urlopen('https://pypi.org/pypi/defluff/$VERSION/json'))
-sdist = next(f for f in d['urls'] if f['packagetype']=='sdist')
-print(sdist['url'], sdist['digests']['sha256'])
-")"
+          read -r URL SHA256 <<< "$(python3 -c "import json, urllib.request; d = json.load(urllib.request.urlopen('https://pypi.org/pypi/defluff/$VERSION/json')); sdist = next(f for f in d['urls'] if f['packagetype']=='sdist'); print(sdist['url'], sdist['digests']['sha256'])")"
           echo "version=$VERSION" >> "$GITHUB_OUTPUT"
           echo "url=$URL" >> "$GITHUB_OUTPUT"
           echo "sha256=$SHA256" >> "$GITHUB_OUTPUT"
