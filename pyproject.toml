@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "defluff"
-version = "0.1.1"
+version = "0.1.2"
 description = "Deterministic prose linter for LLM-generated text — flags filler phrases, AI buzzwords, hedges, and clichés. No model required. Python API + CI exit codes + RL reward signal."
 readme = "README.md"
 license = { file = "LICENSE" }

@@ -1,0 +1,37 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.ahmedak/defluff",
+  "title": "defluff",
+  "description": "Deterministic prose linter for LLM text — flags AI slop, filler, buzzwords, hedges, clichés.",
+  "repository": {
+    "url": "https://github.com/ahmedak/defluff",
+    "source": "github",
+    "id": "R_kgDOTAfnIQ"
+  },
+  "version": "0.1.2",
+  "packages": [
+    {
+      "registryType": "pypi",
+      "registryBaseUrl": "https://pypi.org",
+      "identifier": "defluff",
+      "version": "0.1.2",
+      "runtimeHint": "uvx",
+      "transport": {
+        "type": "stdio"
+      },
+      "runtimeArguments": [
+        {
+          "type": "named",
+          "name": "--from",
+          "value": "defluff[mcp]"
+        }
+      ],
+      "packageArguments": [
+        {
+          "type": "positional",
+          "value": "defluff-mcp"
+        }
+      ]
+    }
+  ]
+}

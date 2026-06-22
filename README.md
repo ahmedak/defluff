@@ -8,11 +8,11 @@
 [![License: MIT](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 [![Last commit](https://img.shields.io/github/last-commit/ahmedak/defluff)](https://github.com/ahmedak/defluff/commits/main)
 
-<img src="demo/demo-fluffy.gif" width="700" alt="Fluffy text gets flagged: defluff lints a sentence full of buzzwords and clichés, returning the slop spans and an over-threshold score.">
+<img src="https://raw.githubusercontent.com/ahmedak/defluff/main/demo/demo-fluffy.gif" width="700" alt="Fluffy text gets flagged: defluff lints a sentence full of buzzwords and clichés, returning the slop spans and an over-threshold score.">
 
 Every flagged span carries no information, so cutting them loses nothing. Clean text, same tool, passes straight through:
 
-<img src="demo/demo-clean.gif" width="700" alt="Clean text passes: defluff lints a plain, concrete sentence and returns a 0% slop score.">
+<img src="https://raw.githubusercontent.com/ahmedak/defluff/main/demo/demo-clean.gif" width="700" alt="Clean text passes: defluff lints a plain, concrete sentence and returns a 0% slop score.">
 
 What makes defluff worth installing over a one-off `grep` is the [engine around the list](#the-list-isnt-what-this-is-about--the-engine-is): bring your own phrases, per-project overlays, and an MCP server your agents pick up with no wiring.
 
@@ -22,6 +22,12 @@ What makes defluff worth installing over a one-off `grep` is the [engine around 
 
 ```bash
 pip install defluff
+```
+
+Or on macOS/Linux via Homebrew:
+
+```bash
+brew install ahmedak/defluff/defluff
 ```
 
 That's it. No model download. No API key. Runs anywhere Python does.
@@ -50,12 +56,25 @@ defluff lint essay.md --json
 
 Exposes three tools so any MCP-aware agent can self-check prose without bespoke wiring — including its own draft, before returning it.
 
+Zero-install via `uvx` (recommended) — pulls the package and the `mcp` extra on first run:
+
+```json
+{
+  "mcpServers": {
+    "defluff": {
+      "command": "uvx",
+      "args": ["--from", "defluff[mcp]", "defluff-mcp"]
+    }
+  }
+}
+```
+
+Or install it and run the entry point directly:
+
 ```bash
 pip install "defluff[mcp]"
 defluff-mcp
 ```
-
-Register in your MCP config:
 
 ```json
 {
@@ -64,6 +83,11 @@ Register in your MCP config:
   }
 }
 ```
+
+Published to the [MCP Registry](https://registry.modelcontextprotocol.io) as `io.github.ahmedak/defluff` (see `server.json`).
+
+<!-- ownership marker for the MCP Registry; do not remove -->
+mcp-name: io.github.ahmedak/defluff
 
 | Tool | Args | Returns |
 |------|------|---------|
@@ -160,7 +184,7 @@ defluff lint draft.md --pack rhetoric  # also catch the punchy "X, not Y" fragme
 defluff lint draft.md --category rhetoric   # gate CI on antithesis alone
 ```
 
-<img src="demo/demo-rhetoric.gif" width="700" alt="Same sentence run twice: the default catches the compound antithesis; --pack rhetoric also catches the short punchy fragment form.">
+<img src="https://raw.githubusercontent.com/ahmedak/defluff/main/demo/demo-rhetoric.gif" width="700" alt="Same sentence run twice: the default catches the compound antithesis; --pack rhetoric also catches the short punchy fragment form.">
 
 ---
 
